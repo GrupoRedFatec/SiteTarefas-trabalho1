@@ -1,0 +1,47 @@
+#rosto {
+    max-width: 200px;
+    border-radius: 90px;
+    display: table;
+    float: left;
+}
+
+#nome {
+    font-size: 30px;
+    padding: 99px;
+    margin-left: 150px;
+    }
+
+h1, h2, h3 {
+    color: blue;
+    font-size: 29px;
+}
+
+body {
+    background-color: black;
+}
+
+p {
+   color: rgb(243, 246, 251) ;
+   font-style: italic;
+}
+
+.links {
+    text-decoration: none;
+    color: rgb(27, 138, 169);
+}
+
+.rodape2 {
+    text-decoration: none;
+    padding: 5px;
+    margin: auto;
+    display: block;
+}
+
+.rodape {
+    background-color: rgba(246, 246, 246, 0.845);
+    margin-right: 1500px;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 10px;
+}
