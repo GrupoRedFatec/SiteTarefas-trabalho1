@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho1</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+   <div>
+   <img src="https://i.pinimg.com/originals/70/71/37/70713776d26d0a7102ccd8c5d9213944.jpg" id="rosto">
+   <p id="nome"> Dalva Calado</p>
+   </div>
+   
+   <div>
+   <h1> Dados Pessoais</h1>
+   <p>Estado Civil : Casado</p>
+   <p>Contato : 97070-7070</p>
+   <p>Endereço : Rua das Laranjeiras e Pinhais, 1348</p><br>
+   </div>
+   
+   
+   <div>
+   <h2>Escolaridade</h2>
+   <p> Nome da Escola : Ensino Médio (Completo)</p>
+   <p> Nome da Faculdade : Faculdade de Tecnologia de Osasco - FATEC  (Cursando - início em 2023)</p><BR></BR>
+   </div>
+   
+   <div>
+   <h3>Redes Sociais</h3>
+   <p>GITHUB: <a href="https://github.com/ "  class="links">clique aqui</a></p>
+   <p>LinkedIn: <a href="https://www.linkedin.com/ " class="links">clique aqui</a></p>
+   <p>ESPRO: <a href="https://espro-app.taqe.com.br/#!/taqe/tabs/vacancies " class="links">clique aqui</a></p>
+   <p>CIA Dos Estágios: <a href="https://www.ciadeestagios.com.br/" class="links">clique aqui</a></p><br><br>
+   </div>
+
+   <footer class="rodape">
+    <a href=" " class="rodape2" class="links">Clique para visitar a Galeria!</a>
+    <a href=" " class="rodape2" class="links">Clique para preencher o Formulário de Contato!</a>
+   </footer>
+   
+
+
+
+
+</body>
+</html>
