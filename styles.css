@@ -12,7 +12,7 @@
     }
 
 h1, h2, h3 {
-    color: blue;
+    color: red;
     font-size: 29px;
 }
 
@@ -27,7 +27,7 @@ p {
 
 .links {
     text-decoration: none;
-    color: rgb(27, 138, 169);
+    color: rgb(255, 73, 73);
 }
 
 .rodape2 {
@@ -38,7 +38,7 @@ p {
 }
 
 .rodape {
-    background-color: rgba(246, 246, 246, 0.845);
+    background-color: rgba(0, 0, 0, 0.397);
     margin-right: 1500px;
     margin-left: auto;
     margin-top: auto;

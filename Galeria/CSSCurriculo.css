@@ -36,6 +36,12 @@ body {
 .nome {
     display: table-cell;
     float: left;
-    margin-top: 125px;
+    margin-top: 90px;
     margin-left: 60px;
+    font-size: 32px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 73, 73);
 }

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<title>Página Contato</title>
+<head>
+    <link href="styles.css" rel="stylesheet">
+    <h1>Contato</h1>
+</head>
+
+<body>
+    <form action="/action_page.php">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+           
+            <label for="fname">Nome:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"><br><br>
+            
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade"><br><br>
+            
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx" pattern="([0-9]{2}) [0-9]{5}-[0-9]{4}"><br><br>
+
+            <label for="DataNasc">Data de nascimento (opcional):</label>
+            <input type="date" id="DataNasc" name="DataNasc"><br><br>
+
+            <legend>Informe o seu sexo:</legend>
+            <label for="sexo">Masculino</label>
+            <input type="radio" id="Masculino" name="sexo" value="Masculino"><br>
+
+            <label for="sexo">Feminino</label>
+            <input type="radio" id="Feminino" name="sexo" value="Feminino"><br>
+
+            <label for="sexo">Prefiro não especificar</label>
+            <input type="radio" id="nespecificar" name="sexo" value="Prefiro não especificar"><br><br>
+
+            <legend>Estado Civil</legend>
+             <input type="checkbox" id="solteiro" name="solteiro" value="solteiro">
+             <label for="solteiro">Solteiro(a)</label>
+             <input type="checkbox" id="casado" name="casado" value="casado">
+             <label for="casado">Casado(a)</label>
+             <input type="checkbox" id="uniãoestavel" name="uniãoestavel" value="uniãoestavel">
+             <label for="uniãoestavel">União estável</label>
+             <input type="checkbox" id="divorcio" name="divorcio" value="divorcio">
+             <label for="divorcio">Divorciado(a)</label>
+             <input type="checkbox" id="viúvo" name="viúvo" value="viúvo">
+             <label for="viúvo">Viúvo(a)</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados da empresa</legend>
+
+            <label for="cnpj">CNPJ (opcional):</label>
+            <input type="text" id="cnpj" name="cnpj"><br><br>
+
+            <label for="rsocial">Razão Social (opcional):</label>
+            <input type="text" id="rsocial" name="rsocial"><br><br>
+
+            <label for="ratuação">Ramo de atuação (opcional):</label>
+            <input type="text" id="ratuação" name="ratuação"><br><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep" placeholder="xxxxx-xxx"><br><br>
+
+            <label for="tipologradouro">Tipo de Logradouro:</label>
+            <select id="tipologradouro">
+                <option value="rua">Rua</option>
+                <option value="avenida">Avenida</option>
+                <option value="praça">Praça</option>
+                <option value="viaduto">Viaduto</option>
+            </select><br><br>
+
+            <label for="logradouro">Logradouro:</label>
+            <input type="text" id="logradouro" name="logradouro"><br><br>
+
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade"><br><br>
+
+            <label for="estado">Estado:</label>
+            <select id="estado">
+                <option value="acre">Acre</option>
+                <option value="alagoas">Alagoas</option>
+                <option value="amapa">Amapá</option>
+                <option value="amazonas">Amazonas</option>
+                <option value="bahia">Bahia</option>
+                <option value="ceara">Ceará</option>
+                <option value="distritofederal">Distrito Federal</option>
+                <option value="espiritosanto">Espírito Santo</option>
+                <option value="goias">Goiás</option>
+                <option value="maranhao">Maranhão</option>
+                <option value="matogrosso">Mato Grosso</option>
+                <option value="matogrossosul">Mato Grosso do Sul</option>
+                <option value="minasgerais">Minas Gerais</option>
+                <option value="para">Pará</option>
+                <option value="paraiba">Paraíba</option>
+                <option value="parana">Paraná</option>
+                <option value="pernambuco">Pernambuco</option>
+                <option value="piaui">Piauí</option>
+                <option value="riojaneiro">Rio de Janeiro</option>
+                <option value="rionorte">Rio Grande do Norte</option>
+                <option value="riosul">Rio Grande do Sul</option>
+                <option value="rondonia">Rondônia</option>
+                <option value="roraima">Roraima</option>
+                <option value="sc">Santa Catarina</option>
+                <option value="sp">São Paulo</option>
+                <option value="se">Sergipe</option>
+                <option value="to">Tocantins</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Complemento</legend>
+
+            <label for="texto"></label>
+            <textarea id="texto" name="texto" rows="6" cols="50">Descreva o interesse.</textarea><br><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Outros</legend>
+
+            <legend>Conhecimento em línguas estrangeiras</legend>
+            <input type="checkbox" id="ingles" name="ingles" value="ingles">
+            <label for="lingua1">Inglês</label>
+            <input type="checkbox" id="espanhol" name="espanhol" value="espanhol">
+            <label for="lingua2">Espanhol</label>
+            <input type="checkbox" id="frances" name="frances" value="frances">
+            <label for="lingua3">Francês</label>
+            <input type="checkbox" id="outros" name="outros" value="outros">
+            <label for="lingua4">Outros, se sim informe:</label>
+            <input type="text" id="outros" name="outros">
+            <input type="checkbox" id="npossuo" name="npossuo" value="npossuo">
+            <label for="lingua5">Não possuo</label>
+            
+           <br><br>
+           <legend>Modelo de trabalho</legend>
+           <input type="radio" id="presencial" name="modelodetrabalho" value="presencial">
+           <label for="presencial">Presencial</label>
+           <input type="radio" id="hibrido" name="modelodetrabalho" value="hibrido">
+           <label for="hibrido">Hibrído</label>
+           <input type="radio" id="remoto" name="modelodetrabalho" value="remoto">
+           <label for="remoto">Remoto</label>
+
+        </fieldset>
+
+        <input type="button" id="submit" name="submit" value="Enviar as informações"><br><br><br>
+
+    </form>
+
+        <a href="https://gruporedfatec.000webhostapp.com/Trabalho1/index.html">Página inicial</a>
+</body>
