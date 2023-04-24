@@ -1,21 +1,504 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.perfil {
+    box-sizing: border-box;
+    display: flex;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #ff0000;
+    height: 225px;
+    background-color: #0d0027;
+    justify-content: space-around;
+}
+
 h1 {
-    color: red;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    height: 75px;
+}
+
+p {
+    color: #ffffff;
+}
+
+#rosto {
+    max-width: 200px;
+    border-radius: 90px;
+    display: flex;
+    float: left;
+}
+
+#nome {
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+}
+
+.links2 {
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}
+
+h1 {
+    color: red; 
+}
+
+
+#texto {
+    color: white;
 }
 
 body {
-    background-color: black;
-    color: white
+    box-sizing: border-box;
+    padding: 100px 200px;
+    margin-left: auto;
+    background-color: #0d0027;
+    color: rgb(255, 255, 255)
 }
 
 fieldset {
-    color: rgb(255, 255, 255);
+    border-style: solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: content;
+    border-color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
+    align-items: flex-start;
 }
 
 legend {
     color: red;
+    text-decoration: underline;
+    text-shadow: maroon;
+}
+
+.data {
+    display: flex;
+}
+
+#DataNasc {
+    height: 20px;
+}
+
+input, textarea {
+    border-radius: 10px;
+    border: 2px solid #ff0000;
+    align-self:auto;
 }
 
 a {
     text-decoration: none;
-    color: rgb(255, 73, 73);
+    color: black;
+}
+
+label {
+    color: white;
+}
+
+.texto {
+    display: flex;
+    justify-items: center;
+}
+
+#text {
+    align-self: center;
+    height: 20px;
+}
+
+h6 {
+    color: red;
+}
+
+#phone {
+    border-radius: 10px;
+    border: 2px solid #ff0000;
+    height: 20px;
+    align-self:center;
+}
+
+/*checkbox*/
+
+.df-c {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.checkbox_conteudo {
+    flex-direction: column;
+    flex-wrap:wrap;
+    align-items: flex-start;
+    margin: 0 5px;
+}
+
+.checkbox_botão {
+    display: flex;
+    position: relative;
+    margin: 5px;
+    margin-left: 0px;
+}
+
+.checkbox_botão1 {
+    display: flex;
+    position: relative;
+    margin: 5px;
+    margin-left: 0px;
+}
+
+
+.checkbox_botão input[type="checkbox"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    appearance: none;
+    z-index: 999999;
+    cursor: pointer;
+}
+
+.checkbox_botão1 input[type="checkbox"] {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    appearance: none;
+    z-index: 999999;
+    cursor: pointer;
+}
+
+.opção {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 1px 25px;
+}
+
+.opção1 {
+    display: flex;
+}
+
+.opção1 #text  {
+    margin-left: 25px;
+}
+
+.opção p {
+    color: white;
+    transform: translateX(8px);
+    transition: all 0.4s;
+}
+
+.opção::before, .opção::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.4s;
+}
+
+.opção::before {
+    content: "\2022";
+    left: 0;
+    width: 42px;
+    background: rgba(255, 255, 255, 0);
+    color: rgb(225, 225, 225);
+    border-radius: 5px 0 0 5px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    transform-origin: left;
+}
+
+.opção::after {
+    right: 0;
+    width: calc(100% - 42px);
+    background: rgba(255, 255, 255, 0);
+    border-radius: 0 5px 5px 0;
+    z-index: -1;
+    transform-origin: right;
+}
+
+.checkbox_botão input[type="checkbox"]:checked ~ .opção::before {
+    content: "\2714 ";
+    color: rgb(255, 255, 255);
+    width: 40px;
+    background: #ff0000;
+}
+
+.checkbox_botão input[type="checkbox"]:checked ~ .opção::after {
+    width: calc(100% - 45px);
+}
+
+.checkbox_botão input[type="checkbox"]:checked ~ .opção p {
+    transform: translateX(25px);
+}
+
+.checkbox_botão1 input[type="checkbox"]:checked ~ .opção::before {
+    content: "\2714 ";
+    color: rgb(255, 255, 255);
+    width: 40px;
+    background: #ff0000;
+}
+
+.checkbox_botão1 input[type="checkbox"]:checked ~ .opção::after {
+    width: calc(100% - 45px);
+}
+
+.checkbox_botão1 input[type="checkbox"]:checked ~ .opção p {
+    transform: translateX(25px);
+}
+
+#checkbox {
+    border: 0;
+}
+
+/*menu*/
+  
+button {
+    border: 0;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+}
+  
+.burger, .menu {
+    position: fixed;
+}
+  
+.burger {
+    z-index: 3;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    width: 60px;
+    height: 60px;
+    background-image: url("bars.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+  
+body.open .burger {
+    background-image: url("multiply.svg");
+}
+  
+.menu {
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    width: 350px;
+    height: calc(100%);
+    background: #07030a;
+    translate: -100% 0;
+    transition: translate 0.375s cubic-bezier(0.175, 0.885, 0.32, 1);
+}
+  
+.menu nav {
+    opacity: 0;
+}
+  
+@keyframes menu-in {
+    0% {
+        clip-path: ellipse(60% 60% at 0% 50%);
+    }
+    100% {
+        clip-path: ellipse(120% 120% at 0% 50%);
+    }
+}
+  
+body.open .menu {
+    opacity: 1;
+    visibility: visible;
+    translate: 0;
+    animation: menu-in 0.375s;
+}
+  
+body.open .menu nav {
+    opacity: 1;
+}
+  
+.menu nav:hover a {
+    opacity: 0.25;
+}
+  
+.menu nav a:hover {
+    opacity: 1;
+}
+  
+.menu nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+.menu a {
+    position: relative;
+    color: #ff0000;
+    font-size: 32px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px 0;
+    width: 300px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+  
+.menu a::before, .menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    transition: 0.4s;
+}
+  
+.menu a::before {
+    opacity: 0;
+    background: rgb(255 255 255 / 20%);
+}
+  
+.menu a::after {
+    transform: scaleX(0);
+    transform-origin: 0% 50%;
+    background: #f7f7f7;
+}
+  
+.menu a:hover::before {
+    opacity: 1;
+}
+  
+.menu a:hover::after {
+    transform: scaleX(1);
+}
+  
+body.open .menu a {
+    animation: appear 0.25s backwards;
+}
+  
+@keyframes appear {
+    0% {
+      opacity: 0;
+      translate: -30px 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*submit*/
+
+.btn {
+    position: relative;
+    transition: color 0.3s;
+    border: 2px solid #ff0000;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #ff0000;
+    transform: scaleX(0.05);
+    transform-origin: left;
+    transition: transform 0.3s;
+    z-index: -1;
+}
+
+.btn:hover::after {
+    transform: scaleX(1);
+}
+
+.btn:hover {
+    color: white;
+}
+
+/*radio*/
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+label span {
+    display: flex;
+    align-items: center;
+    padding:10px 20px 10px 10px;
+    border-radius: 31px;
+    transition: .25s ease;
+}
+
+label span:hover, input[type="radio"]:checked + span {
+    background-color: #0d0027;
+    color: #ffffff;
+}
+
+label span::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: .25s ease;
+    box-shadow: inset 0 0 0 2px #ff0000;
+}
+
+input[type="radio"]:checked + span::before {
+    box-shadow: inset 0 0 0 7px #ff0000;
+}
+
+/*select*/
+
+.select {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-width: 200px;
+    height: 30px;
+    z-index: 1;
+}
+
+.select1 {
+    border: solid;
+    border-color: #ff0000;
+    border-radius: 10px;
+    appearance: none;
+    padding: 0 30px 0 15px;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+}
+
+.select .icone-content {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff0000 ;
 }

@@ -9,9 +9,16 @@
     font-size: 30px;
     padding: 99px;
     margin-left: 150px;
-    }
+}
 
-h1, h2, h3 {
+#nome2 {
+    font-size: 15px;
+    color: white;
+    padding: 200px;
+    margin-left: 150px;
+}
+
+h1, h2, h3, h4 {
     color: red;
     font-size: 29px;
 }
@@ -20,7 +27,7 @@ body {
     background-color: black;
 }
 
-p {
+p, li, cite {
    color: rgb(243, 246, 251) ;
    font-style: italic;
 }
@@ -30,18 +37,9 @@ p {
     color: rgb(255, 73, 73);
 }
 
-.rodape2 {
+.links2 {
     text-decoration: none;
-    padding: 5px;
-    margin: auto;
-    display: block;
+    color: rgb(255, 0, 0);
 }
 
-.rodape {
-    background-color: rgba(0, 0, 0, 0.397);
-    margin-right: 1500px;
-    margin-left: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    border-radius: 10px;
-}
+
